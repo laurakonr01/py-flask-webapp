@@ -10,7 +10,7 @@
 
             {% if message %}
 
-                <p> <h2> Hello you belong to<b>{{generatiion}} generation! >\b></h2></p>
+                <p> <h2> Hello {{message}}! </h2></p>
 
             {% else %}
 
@@ -25,6 +25,21 @@
                 <form method="post" action="/gen">
                     <label for="text">Please Enter Year of your brith</label>
                     <input type="text" id="dob" name="dob" required="required">
+                    <input type="submit" value="Submit" id="submit"/>
+                </form>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="contact-form-2" >
+                <form method="post" action="/horoscope">
+                    <label for="text">Please Enter the day and year of yourbrith</label>
+
+                    <input type="text" id="day" name="day" required="required">
+
+                    <input type="text" id="month" name="month" required="required">
+
                     <input type="submit" value="Submit" id="submit"/>
                 </form>
             </div>
